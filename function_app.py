@@ -11,7 +11,7 @@ from azure.functions import HttpRequest, HttpResponse
 from azure.monitor.events.extension import track_event
 from azure.monitor.opentelemetry import configure_azure_monitor
 
-from ons_geography import get_ons_from_postcodes
+from catalyst_ons_geography.catalyst_ons_geography import get_ons_from_postcodes
 
 configure_azure_monitor(
     logger_name=__name__,
