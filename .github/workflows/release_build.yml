@@ -31,3 +31,15 @@ jobs:
         with:
           name: azure-function-release
           path: azure_function_release/
+
+      - name: Zip the release artifact
+        run: |
+          cd azure_function_release
+          zip -r ../azure_function_release.zip .
+          cd ..
+
+      - name: Attach artifact to release with gh cli
+        run: |
+          gh release upload ${{ github.event.release.tag_name }} azure_function_release.zip --clobber
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
