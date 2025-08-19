@@ -6,13 +6,13 @@ azure-identity==1.23.0
 azure-monitor-events-extension==0.1.0
 azure-monitor-opentelemetry==1.6.9
 azure-monitor-opentelemetry-exporter==1.0.0b36
-catalyst_ons_geography @ git+https://github.com/Geovation/catalyst-ons-geographies-python@a6b341f25fce73a40634e4ae6de3ae3e6b165925
+catalyst_ons_geography @ git+https://github.com/Geovation/catalyst-ons-geographies-python@144ff2b156156e2c6241fe25bef407c0d46ca463
 certifi==2025.4.26
 cffi==1.17.1
 charset-normalizer==3.4.2
 cryptography==45.0.2
 Deprecated==1.2.18
-duckdb==1.1.3
+duckdb==1.3.2
 fixedint==0.1.6
 idna==3.10
 importlib_metadata==8.6.1
